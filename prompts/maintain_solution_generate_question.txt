@@ -1,0 +1,38 @@
+Generate one original DP-600-style MCQ for the following practice request.
+
+Section: {section}
+Topic: {topic}
+Requested difficulty: {difficulty}
+Session number: {session}
+Question number: {question_number}
+Requested question style / focus tags: {exam_patterns}
+Question style mode: {company_level}
+
+Student performance snapshot:
+- Recent accuracy: {recent_accuracy}
+- Strong topics: {strong_topics}
+- Weak topics: {weak_topics}
+
+Recently generated questions to avoid repeating:
+{recent_question_summaries}
+
+Generation instructions:
+- Keep the question strictly aligned with the Maintain a Data Analytics Solution skill
+  area of DP-600 and the requested topic "{topic}".
+- Make the question appropriate for {difficulty} difficulty, calibrated to DP-600's own
+  difficulty curve for this skill area.
+- If "Question style mode" is "DP-600 PYQ Style", write the question the way an actual
+  Microsoft certification exam would phrase it (formal, scenario-driven language, often
+  starting with a short business context).
+- If it is "Conceptual Deep-Dive", prioritize a question that tests *why* a control or
+  lifecycle step is used, not just *what* it is called.
+- If it is "Numerical / Computation Heavy", ensure the question requires an actual
+  calculation or precise sequencing to reach the answer (rare for this skill area, but
+  still stay faithful to the request).
+- If it is "Speed Round", keep the question solvable in well under a minute once the
+  concept is known.
+- Set question_type to "MCQ".
+- Use concise but complete solution steps.
+- If no formula is required, return an empty array for formula_used.
+- Use tags that help with analytics and topic tracking (include the subtopic name as a tag).
+- Return only schema-valid JSON.
